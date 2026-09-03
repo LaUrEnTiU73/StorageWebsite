@@ -1,0 +1,32 @@
+:root {
+  --max-display-width: 1920px;
+  --main-color: #18151f;
+  --second-color: #71809f;
+  --gray-color: rgb(42, 38, 38);
+  --delete-color: #ae494e;
+  --edit-color: #71809f;
+  --main-text-color: white;
+  --overlay-color: #9094917e;
+  --placeholder-gray-color: rgb(116, 114, 114);
+
+  --font-family-general: sans-serif;
+
+  --fontSize__s: 15px;
+  --fontSize__m: 20px;
+  --fontSize__l: 25px;
+  --fontSize__xl: 30px;
+  --fontSize__xxl: 50px;
+
+  --fontSize__s-l: clamp(var(--fontSize__s), 10px + 1.2vw, var(--fontSize__xl));
+  --fontSize__s-m: clamp(var(--fontSize__s), 12px + 0.6vw, var(--fontSize__m));
+  --fontSize__l-xxl: clamp(
+    var(--fontSize__l),
+    15px + 2vw,
+    var(--fontSize__xxl)
+  );
+  --fontSize__s-xl: clamp(
+    var(--fontSize__s),
+    10px + 1.2vw,
+    var(--fontSize__xl)
+  );
+}
