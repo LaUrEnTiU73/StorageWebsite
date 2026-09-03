@@ -48,9 +48,15 @@ To pass the product data of the selected item to JavaScript, custom HTML `data-`
 
 Each product from the database is displayed using a **CSS grid layout** in a table, featuring its own dedicated Edit and Delete buttons.
 
+<img width="1896" height="956" alt="desktop_products" src="https://github.com/user-attachments/assets/357aee6f-fb81-4695-b84d-e6d67dcfc410" />
+
+
 ### Page Number
 
 After sorting and filtering, products are paginated to display 10 items per page, accompanied with page number indicators and navigation buttons.
+
+<img width="1880" height="416" alt="page-number" src="https://github.com/user-attachments/assets/19d87081-fcda-49aa-ab1c-9a35f6adf2aa" />
+
 
 ### Create
 
@@ -67,7 +73,7 @@ All the fields are required.
 - **Image** Accepts only JPEG, PNG formats (maximum 2MB).
 - **Stock** Set to _OFF_ ( Is not in stock) by default.
 
-All of these validation are performed both in **JavaScript** (to provide the user a custom error message directly : function `validationInputJS(e)` from `main.js`) as well as at the PHP level as a security mesure. Location :(`crud/validation_input.php`)
+All of these validation are performed both in **JavaScript** (to provide the user a custom error message directly  (function `validationInputJS(e)` from `main.js`) as well as at the PHP level as a security mesure. Location :(`crud/validation_input.php`)
 
 When the user submits the form, the function `validationInputJS(e)` retrieves all input data, trim white spaces, and performs the necessary validation checks.
 
@@ -76,6 +82,8 @@ When the user submits the form, the function `validationInputJS(e)` retrieves al
 - **Client-Side Validation Failed**: If errors are found `e.preventDefault()` hold form submission,displaying error messages directly in the Add or Edit modal below the image container.
 - **Server-Side Validation Failed**: If client-side validation _passed_ but server-side validation detects an _error_, a generic error message is displayed to the user.
 - **Validation Passed**: If no errors are detected, on either client or server side, the database queries are executed securely using **PDO**.
+
+<img width="554" height="692" alt="desktop_addError" src="https://github.com/user-attachments/assets/58442ce3-ae82-4e1c-b7ac-4c1288df3957" />
 
 
 ### Edit
@@ -93,6 +101,8 @@ The layout adapts across all devices sizes:
 - **Mobile**: Products are stacked vertically as individual cards (1 card per row)
 - **Tablet**: Displayed in a 2-column card grid.
 - **Desktop** (up to 1920px): Renders as a full-width data table.
+
+  <img width="370" height="664" alt="mobile_start" src="https://github.com/user-attachments/assets/e5a4cb49-dc49-453c-af10-e5b0a09d4947" />
 
 ## License
 
